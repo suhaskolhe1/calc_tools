@@ -1,42 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Main Pages -->
   <url>
-    <loc>https://calctools.example.com/</loc>
+    <loc>https://calc-tools-nu.vercel.app/</loc>
     <lastmod>2025-11-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
+
   <url>
-    <loc>https://calctools.example.com/about.html</loc>
+    <loc>https://calc-tools-nu.vercel.app/about.html</loc>
     <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://calctools.example.com/contact.html</loc>
+    <loc>https://calc-tools-nu.vercel.app/contact.html</loc>
     <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://calctools.example.com/privacy-policy.html</loc>
+    <loc>https://calc-tools-nu.vercel.app/privacy-policy.html</loc>
     <priority>0.8</priority>
   </url>
-  <!-- Calculators -->
-  <url><loc>https://calctools.example.com/age/</loc><priority>0.9</priority></url>
-  <url><loc>https://calctools.example.com/bmi/</loc><priority>0.9</priority></url>
-  <url><loc>https://calctools.example.com/percentage/</loc><priority>0.9</priority></url>
-  <url><loc>https://calctools.example.com/discount/</loc><priority>0.9</priority></url>
-  <url><loc>https://calctools.example.com/unit-converter/</loc><priority>0.9</priority></url>
-  <url><loc>https://calctools.example.com/scientific/</loc><priority>0.9</priority></url>
-  <url><loc>https://calctools.example.com/password-generator/</loc><priority>0.9</priority></url>
-  <url><loc>https://calctools.example.com/date-diff/</loc><priority>0.9</priority></url>
-  <url><loc>https://calctools.example.com/average/</loc><priority>0.9</priority></url>
-  <url><loc>https://calctools.example.com/fraction-decimal/</loc><priority>0.9</priority></url>
-  <url><loc>https://calctools.example.com/emi/</loc><priority>0.9</priority></url>
-  <url><loc>https://calctools.example.com/sip/</loc><priority>0.9</priority></url>
-  <url><loc>https://calctools.example.com/simple-interest/</loc><priority>0.9</priority></url>
-  <url><loc>https://calctools.example.com/compound-interest/</loc><priority>0.9</priority></url>
-  <url><loc>https://calctools.example.com/salary/</loc><priority>0.9</priority></url>
-  <url><loc>https://calctools.example.com/gst/</loc><priority>0.9</priority></url>
-  <url><loc>https://calctools.example.com/income-tax/</loc><priority>0.9</priority></url>
-  <url><loc>https://calctools.example.com/currency/</loc><priority>0.9</priority></url>
-  <url><loc>https://calctools.example.com/mortgage/</loc><priority>0.9</priority></url>
-  <url><loc>https://calctools.example.com/savings/</loc><priority>0.9</priority></url>
+
+  <!-- Calculator Pages -->
+  <url><loc>https://calc-tools-nu.vercel.app/age/</loc><priority>0.9</priority></url>
+  <url><loc>https://calc-tools-nu.vercel.app/bmi/</loc><priority>0.9</priority></url>
+  <url><loc>https://calc-tools-nu.vercel.app/percentage/</loc><priority>0.9</priority></url>
+  <url><loc>https://calc-tools-nu.vercel.app/discount/</loc><priority>0.9</priority></url>
+  <url><loc>https://calc-tools-nu.vercel.app/unit-converter/</loc><priority>0.9</priority></url>
+  <url><loc>https://calc-tools-nu.vercel.app/scientific/</loc><priority>0.9</priority></url>
+  <url><loc>https://calc-tools-nu.vercel.app/password-generator/</loc><priority>0.9</priority></url>
+  <url><loc>https://calc-tools-nu.vercel.app/date-diff/</loc><priority>0.9</priority></url>
+  <url><loc>https://calc-tools-nu.vercel.app/average/</loc><priority>0.9</priority></url>
+  <url><loc>https://calc-tools-nu.vercel.app/fraction-decimal/</loc><priority>0.9</priority></url>
+  <url><loc>https://calc-tools-nu.vercel.app/emi/</loc><priority>0.9</priority></url>
+  <url><loc>https://calc-tools-nu.vercel.app/sip/</loc><priority>0.9</priority></url>
+  <url><loc>https://calc-tools-nu.vercel.app/simple-interest/</loc><priority>0.9</priority></url>
+  <url><loc>https://calc-tools-nu.vercel.app/compound-interest/</loc><priority>0.9</priority></url>
+  <url><loc>https://calc-tools-nu.vercel.app/salary/</loc><priority>0.9</priority></url>
+  <url><loc>https://calc-tools-nu.vercel.app/gst/</loc><priority>0.9</priority></url>
+  <url><loc>https://calc-tools-nu.vercel.app/income-tax/</loc><priority>0.9</priority></url>
+  <url><loc>https://calc-tools-nu.vercel.app/currency/</loc><priority>0.9</priority></url>
+  <url><loc>https://calc-tools-nu.vercel.app/mortgage/</loc><priority>0.9</priority></url>
+  <url><loc>https://calc-tools-nu.vercel.app/savings/</loc><priority>0.9</priority></url>
+
 </urlset>

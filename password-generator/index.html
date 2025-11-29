@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator - Create Strong Passwords</title>
+    <meta name="description"
+        content="Free online Password Generator. Create strong, secure, and random passwords instantly to protect your accounts.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-900 min-h-screen flex flex-col">
+
+    <header class="bg-white shadow-sm py-4 sticky top-0 z-50">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold text-indigo-600 flex items-center gap-2">
+                CalcTools
+            </a>
+            <nav class="hidden md:flex gap-6 text-sm font-medium text-slate-600">
+                <a href="/" class="hover:text-indigo-600 transition-colors">Home</a>
+                <a href="/about.html" class="hover:text-indigo-600 transition-colors">About</a>
+                <a href="/contact.html" class="hover:text-indigo-600 transition-colors">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container mx-auto px-4 my-6 text-center">
+        <div
+            class="bg-slate-200 h-24 w-full max-w-3xl mx-auto rounded-lg flex items-center justify-center text-slate-400 text-sm border-2 border-dashed border-slate-300">
+            AdSense Placeholder (Top)
+        </div>
+    </div>
+
+    <main class="flex-grow container mx-auto px-4 flex flex-col items-center">
+
+        <div
+            class="bg-white p-6 md:p-8 rounded-2xl shadow-xl w-full max-w-md border border-slate-100 transition-all hover:shadow-2xl">
+            <h1 class="text-2xl font-bold text-slate-800 mb-6 text-center">Password Generator</h1>
+
+            <div class="bg-slate-100 p-4 rounded-lg mb-6 flex items-center justify-between">
+                <span id="password-display" class="font-mono text-lg text-slate-700 break-all">Click Generate</span>
+                <button id="copy-btn" class="text-indigo-600 hover:text-indigo-800 p-2" title="Copy to Clipboard">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="space-y-4 mb-6">
+                <div>
+                    <label class="flex justify-between text-sm font-semibold text-slate-700 mb-2">
+                        <span>Length</span>
+                        <span id="length-val">12</span>
+                    </label>
+                    <input type="range" id="length" min="6" max="32" value="12"
+                        class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-indigo-600">
+                </div>
+
+                <div class="space-y-2">
+                    <label class="flex items-center gap-3 cursor-pointer">
+                        <input type="checkbox" id="uppercase" checked
+                            class="w-5 h-5 text-indigo-600 rounded border-slate-300 focus:ring-indigo-500">
+                        <span class="text-slate-700">Include Uppercase Letters</span>
+                    </label>
+                    <label class="flex items-center gap-3 cursor-pointer">
+                        <input type="checkbox" id="lowercase" checked
+                            class="w-5 h-5 text-indigo-600 rounded border-slate-300 focus:ring-indigo-500">
+                        <span class="text-slate-700">Include Lowercase Letters</span>
+                    </label>
+                    <label class="flex items-center gap-3 cursor-pointer">
+                        <input type="checkbox" id="numbers" checked
+                            class="w-5 h-5 text-indigo-600 rounded border-slate-300 focus:ring-indigo-500">
+                        <span class="text-slate-700">Include Numbers</span>
+                    </label>
+                    <label class="flex items-center gap-3 cursor-pointer">
+                        <input type="checkbox" id="symbols"
+                            class="w-5 h-5 text-indigo-600 rounded border-slate-300 focus:ring-indigo-500">
+                        <span class="text-slate-700">Include Symbols</span>
+                    </label>
+                </div>
+            </div>
+
+            <button id="generate-btn"
+                class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-4 rounded-lg transition-all transform active:scale-95 shadow-md hover:shadow-lg flex items-center justify-center gap-2">
+                <span>Generate Password</span>
+            </button>
+        </div>
+
+        <article
+            class="mt-12 max-w-3xl prose prose-slate prose-headings:text-indigo-900 prose-a:text-indigo-600 hover:prose-a:text-indigo-500">
+            <h2 class="text-2xl font-bold mb-4 text-slate-800">Why Use a Strong Password?</h2>
+            <p class="text-slate-600 mb-6 leading-relaxed">
+                Using a strong, random password is the first line of defense against cyber threats.
+                Weak passwords like "123456" or "password" can be cracked in seconds.
+                This tool generates cryptographically secure random passwords that are hard to guess.
+            </p>
+        </article>
+
+    </main>
+
+    <div class="container mx-auto px-4 my-8 text-center">
+        <div
+            class="bg-slate-200 h-24 w-full max-w-3xl mx-auto rounded-lg flex items-center justify-center text-slate-400 text-sm border-2 border-dashed border-slate-300">
+            AdSense Placeholder (Bottom)
+        </div>
+    </div>
+
+    <footer class="bg-white border-t border-slate-200 py-6 mt-auto">
+        <div class="container mx-auto px-4 text-center text-slate-500 text-sm">
+            &copy;
+            <script>document.write(new Date().getFullYear())</script> CalcTools. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

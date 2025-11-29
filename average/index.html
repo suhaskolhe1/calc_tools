@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average Calculator - Find Mean of Numbers</title>
+    <meta name="description"
+        content="Free online Average Calculator. Calculate the mean (average) of a set of numbers easily.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-900 min-h-screen flex flex-col">
+
+    <header class="bg-white shadow-sm py-4 sticky top-0 z-50">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold text-indigo-600 flex items-center gap-2">
+                CalcTools
+            </a>
+            <nav class="hidden md:flex gap-6 text-sm font-medium text-slate-600">
+                <a href="/" class="hover:text-indigo-600 transition-colors">Home</a>
+                <a href="/about.html" class="hover:text-indigo-600 transition-colors">About</a>
+                <a href="/contact.html" class="hover:text-indigo-600 transition-colors">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container mx-auto px-4 my-6 text-center">
+        <div
+            class="bg-slate-200 h-24 w-full max-w-3xl mx-auto rounded-lg flex items-center justify-center text-slate-400 text-sm border-2 border-dashed border-slate-300">
+            AdSense Placeholder (Top)
+        </div>
+    </div>
+
+    <main class="flex-grow container mx-auto px-4 flex flex-col items-center">
+
+        <div
+            class="bg-white p-6 md:p-8 rounded-2xl shadow-xl w-full max-w-md border border-slate-100 transition-all hover:shadow-2xl">
+            <h1 class="text-2xl font-bold text-slate-800 mb-6 text-center">Average Calculator</h1>
+
+            <div class="mb-6">
+                <label for="numbers" class="block text-sm font-semibold text-slate-700 mb-2">Enter Numbers (comma
+                    separated)</label>
+                <textarea id="numbers" rows="4"
+                    class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-slate-50"
+                    placeholder="e.g. 10, 20, 30, 40"></textarea>
+            </div>
+
+            <button id="calculate-btn"
+                class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-4 rounded-lg transition-all transform active:scale-95 shadow-md hover:shadow-lg flex items-center justify-center gap-2">
+                <span>Calculate Average</span>
+            </button>
+
+            <div id="result" class="mt-8 hidden text-center">
+                <div class="bg-indigo-50 p-6 rounded-xl border border-indigo-100">
+                    <span class="text-sm font-medium text-indigo-400 uppercase tracking-wider">Average (Mean)</span>
+                    <span id="average-val" class="block text-4xl font-bold text-indigo-600 my-2">0</span>
+                    <div class="grid grid-cols-2 gap-4 mt-4 text-sm">
+                        <div class="bg-white p-2 rounded border border-indigo-100">
+                            <span class="text-slate-500 block">Sum</span>
+                            <span id="sum-val" class="font-bold text-slate-800">0</span>
+                        </div>
+                        <div class="bg-white p-2 rounded border border-indigo-100">
+                            <span class="text-slate-500 block">Count</span>
+                            <span id="count-val" class="font-bold text-slate-800">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <article
+            class="mt-12 max-w-3xl prose prose-slate prose-headings:text-indigo-900 prose-a:text-indigo-600 hover:prose-a:text-indigo-500">
+            <h2 class="text-2xl font-bold mb-4 text-slate-800">How to Calculate Average?</h2>
+            <p class="text-slate-600 mb-6 leading-relaxed">
+                The average (or arithmetic mean) is calculated by adding up all the numbers in a set and then dividing
+                the sum by the count of those numbers.
+            </p>
+            <p class="text-slate-600 mb-6 leading-relaxed">
+                <strong>Formula:</strong> Average = Sum of Numbers / Count of Numbers
+            </p>
+        </article>
+
+    </main>
+
+    <div class="container mx-auto px-4 my-8 text-center">
+        <div
+            class="bg-slate-200 h-24 w-full max-w-3xl mx-auto rounded-lg flex items-center justify-center text-slate-400 text-sm border-2 border-dashed border-slate-300">
+            AdSense Placeholder (Bottom)
+        </div>
+    </div>
+
+    <footer class="bg-white border-t border-slate-200 py-6 mt-auto">
+        <div class="container mx-auto px-4 text-center text-slate-500 text-sm">
+            &copy;
+            <script>document.write(new Date().getFullYear())</script> CalcTools. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

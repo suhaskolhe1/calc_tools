@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GST Calculator - Calculate GST Amount</title>
+    <meta name="description"
+        content="Free online GST Calculator. Calculate Goods and Services Tax (GST) inclusive and exclusive amounts easily.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-900 min-h-screen flex flex-col">
+
+    <header class="bg-white shadow-sm py-4 sticky top-0 z-50">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold text-indigo-600 flex items-center gap-2">
+                CalcTools
+            </a>
+            <nav class="hidden md:flex gap-6 text-sm font-medium text-slate-600">
+                <a href="/" class="hover:text-indigo-600 transition-colors">Home</a>
+                <a href="/about.html" class="hover:text-indigo-600 transition-colors">About</a>
+                <a href="/contact.html" class="hover:text-indigo-600 transition-colors">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container mx-auto px-4 my-6 text-center">
+        <div
+            class="bg-slate-200 h-24 w-full max-w-3xl mx-auto rounded-lg flex items-center justify-center text-slate-400 text-sm border-2 border-dashed border-slate-300">
+            AdSense Placeholder (Top)
+        </div>
+    </div>
+
+    <main class="flex-grow container mx-auto px-4 flex flex-col items-center">
+
+        <div
+            class="bg-white p-6 md:p-8 rounded-2xl shadow-xl w-full max-w-md border border-slate-100 transition-all hover:shadow-2xl">
+            <h1 class="text-2xl font-bold text-slate-800 mb-6 text-center">GST Calculator</h1>
+
+            <div class="space-y-4 mb-6">
+                <div>
+                    <label class="block text-sm font-semibold text-slate-700 mb-2">Calculation Type</label>
+                    <div class="flex bg-slate-100 p-1 rounded-lg">
+                        <button
+                            class="flex-1 py-2 rounded-md text-sm font-medium transition-colors bg-white text-indigo-600 shadow-sm"
+                            id="type-exclusive">GST Exclusive</button>
+                        <button
+                            class="flex-1 py-2 rounded-md text-sm font-medium text-slate-500 hover:text-slate-700 transition-colors"
+                            id="type-inclusive">GST Inclusive</button>
+                    </div>
+                </div>
+                <div>
+                    <label for="amount" class="block text-sm font-semibold text-slate-700 mb-2">Amount</label>
+                    <input type="number" id="amount"
+                        class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                        placeholder="e.g. 1000">
+                </div>
+                <div>
+                    <label for="rate" class="block text-sm font-semibold text-slate-700 mb-2">GST Rate (%)</label>
+                    <select id="rate"
+                        class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-white">
+                        <option value="5">5%</option>
+                        <option value="12">12%</option>
+                        <option value="18" selected>18%</option>
+                        <option value="28">28%</option>
+                    </select>
+                </div>
+            </div>
+
+            <button id="calculate-btn"
+                class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-4 rounded-lg transition-all transform active:scale-95 shadow-md hover:shadow-lg flex items-center justify-center gap-2">
+                <span>Calculate GST</span>
+            </button>
+
+            <div id="result" class="mt-8 hidden text-center">
+                <div class="bg-indigo-50 p-6 rounded-xl border border-indigo-100">
+                    <span class="text-sm font-medium text-indigo-400 uppercase tracking-wider">Total Amount</span>
+                    <span id="total-val" class="block text-4xl font-bold text-indigo-600 my-2">0</span>
+                    <div class="mt-4 pt-4 border-t border-indigo-100 grid grid-cols-2 gap-4 text-sm">
+                        <div>
+                            <span class="block text-slate-500">Net Amount</span>
+                            <span id="net-val" class="font-bold text-slate-700">0</span>
+                        </div>
+                        <div>
+                            <span class="block text-slate-500">GST Amount</span>
+                            <span id="gst-val" class="font-bold text-slate-700">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <article
+            class="mt-12 max-w-3xl prose prose-slate prose-headings:text-indigo-900 prose-a:text-indigo-600 hover:prose-a:text-indigo-500">
+            <h2 class="text-2xl font-bold mb-4 text-slate-800">What is GST?</h2>
+            <p class="text-slate-600 mb-6 leading-relaxed">
+                GST (Goods and Services Tax) is an indirect tax used in India on the supply of goods and services.
+            </p>
+        </article>
+
+    </main>
+
+    <div class="container mx-auto px-4 my-8 text-center">
+        <div
+            class="bg-slate-200 h-24 w-full max-w-3xl mx-auto rounded-lg flex items-center justify-center text-slate-400 text-sm border-2 border-dashed border-slate-300">
+            AdSense Placeholder (Bottom)
+        </div>
+    </div>
+
+    <footer class="bg-white border-t border-slate-200 py-6 mt-auto">
+        <div class="container mx-auto px-4 text-center text-slate-500 text-sm">
+            &copy;
+            <script>document.write(new Date().getFullYear())</script> CalcTools. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

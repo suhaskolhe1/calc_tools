@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Calculator - Find Sale Price</title>
+    <meta name="description"
+        content="Free online Discount Calculator. Calculate the final price after discount and the amount you save.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-900 min-h-screen flex flex-col">
+
+    <header class="bg-white shadow-sm py-4 sticky top-0 z-50">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold text-indigo-600 flex items-center gap-2">
+                CalcTools
+            </a>
+            <nav class="hidden md:flex gap-6 text-sm font-medium text-slate-600">
+                <a href="/" class="hover:text-indigo-600 transition-colors">Home</a>
+                <a href="/about.html" class="hover:text-indigo-600 transition-colors">About</a>
+                <a href="/contact.html" class="hover:text-indigo-600 transition-colors">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container mx-auto px-4 my-6 text-center">
+        <div
+            class="bg-slate-200 h-24 w-full max-w-3xl mx-auto rounded-lg flex items-center justify-center text-slate-400 text-sm border-2 border-dashed border-slate-300">
+            AdSense Placeholder (Top)
+        </div>
+    </div>
+
+    <main class="flex-grow container mx-auto px-4 flex flex-col items-center">
+
+        <div
+            class="bg-white p-6 md:p-8 rounded-2xl shadow-xl w-full max-w-md border border-slate-100 transition-all hover:shadow-2xl">
+            <h1 class="text-2xl font-bold text-slate-800 mb-6 text-center">Discount Calculator</h1>
+
+            <div class="space-y-4 mb-6">
+                <div>
+                    <label for="price" class="block text-sm font-semibold text-slate-700 mb-2">Original Price</label>
+                    <input type="number" id="price"
+                        class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                        placeholder="e.g. 100">
+                </div>
+                <div>
+                    <label for="discount" class="block text-sm font-semibold text-slate-700 mb-2">Discount (%)</label>
+                    <input type="number" id="discount"
+                        class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                        placeholder="e.g. 20">
+                </div>
+            </div>
+
+            <button id="calculate-btn"
+                class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-4 rounded-lg transition-all transform active:scale-95 shadow-md hover:shadow-lg flex items-center justify-center gap-2">
+                <span>Calculate Savings</span>
+            </button>
+
+            <div id="result" class="mt-8 hidden space-y-4">
+                <div class="bg-green-50 p-4 rounded-xl border border-green-100 text-center">
+                    <span class="text-sm font-medium text-green-600 uppercase tracking-wider">Final Price</span>
+                    <span id="final-price" class="block text-3xl font-bold text-green-700 my-1">$0.00</span>
+                </div>
+                <div class="bg-indigo-50 p-4 rounded-xl border border-indigo-100 text-center">
+                    <span class="text-sm font-medium text-indigo-600 uppercase tracking-wider">You Save</span>
+                    <span id="saved-amount" class="block text-2xl font-bold text-indigo-700 my-1">$0.00</span>
+                </div>
+            </div>
+        </div>
+
+        <article
+            class="mt-12 max-w-3xl prose prose-slate prose-headings:text-indigo-900 prose-a:text-indigo-600 hover:prose-a:text-indigo-500">
+            <h2 class="text-2xl font-bold mb-4 text-slate-800">How to Calculate Discount?</h2>
+            <p class="text-slate-600 mb-6 leading-relaxed">
+                To calculate the discount price, you first calculate the savings amount by multiplying the original
+                price by the discount percentage. Then, subtract the savings from the original price.
+            </p>
+
+            <h2 class="text-2xl font-bold mb-4 text-slate-800">Example Calculation</h2>
+            <div class="bg-white p-6 rounded-lg border-l-4 border-indigo-500 shadow-sm">
+                <p class="text-slate-600">
+                    Original Price: <strong>$100</strong>, Discount: <strong>20%</strong>
+                </p>
+                <ul class="mt-2 space-y-1 text-slate-700 font-medium">
+                    <li>Savings: $100 * 0.20 = <strong>$20</strong></li>
+                    <li>Final Price: $100 - $20 = <strong>$80</strong></li>
+                </ul>
+            </div>
+        </article>
+
+    </main>
+
+    <div class="container mx-auto px-4 my-8 text-center">
+        <div
+            class="bg-slate-200 h-24 w-full max-w-3xl mx-auto rounded-lg flex items-center justify-center text-slate-400 text-sm border-2 border-dashed border-slate-300">
+            AdSense Placeholder (Bottom)
+        </div>
+    </div>
+
+    <footer class="bg-white border-t border-slate-200 py-6 mt-auto">
+        <div class="container mx-auto px-4 text-center text-slate-500 text-sm">
+            &copy;
+            <script>document.write(new Date().getFullYear())</script> CalcTools. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

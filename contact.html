@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - CalcTools</title>
+    <meta name="description" content="Contact the CalcTools team for suggestions, feedback, or support.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-900 min-h-screen flex flex-col">
+
+    <header class="bg-white shadow-sm py-4 sticky top-0 z-50">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold text-indigo-600">CalcTools</a>
+            <nav class="hidden md:flex gap-6 text-sm font-medium text-slate-600">
+                <a href="/" class="hover:text-indigo-600 transition-colors">Home</a>
+                <a href="/about.html" class="hover:text-indigo-600 transition-colors">About</a>
+                <a href="/contact.html" class="hover:text-indigo-600 transition-colors">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12 max-w-3xl flex-grow">
+        <h1 class="text-3xl font-bold mb-6 text-slate-800">Contact Us</h1>
+        <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-100">
+            <p class="text-slate-600 mb-6">Have a question, suggestion, or found a bug? We'd love to hear from you. Send
+                us an email at:</p>
+            <a href="mailto:support@calctools.example.com"
+                class="text-xl font-semibold text-indigo-600 hover:underline">support@calctools.example.com</a>
+            <p class="text-slate-500 text-sm mt-8">Note: This is a demo project, so the email is a placeholder.</p>
+        </div>
+    </main>
+
+    <footer class="bg-white border-t border-slate-200 py-8 mt-auto">
+        <div class="container mx-auto px-4 text-center text-slate-500 text-sm">
+            &copy;
+            <script>document.write(new Date().getFullYear())</script> CalcTools. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+
+</html>

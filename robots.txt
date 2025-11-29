@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://calctools.example.com/sitemap.xml
+Sitemap: https://calc-tools-nu.vercel.app/sitemap.xml
